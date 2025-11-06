@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>VietCoding — Chia sẻ Source</title>
+  <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">VietCoding</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="share.html">Share</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a id="nav-profile" href="profile.html" style="display:none">Profile</a>
+        <button id="auth-btn" class="btn">Login</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Code Việt — Tư duy toàn cầu</h1>
+        <p>Chia sẻ project, học hỏi, đóng góp và cùng lên top.</p>
+
+        <div class="searchbar">
+          <input id="searchInput" placeholder="Tìm project, tác giả, tag...">
+          <select id="filter" class="filter">
+            <option value="">Tất cả</option>
+            <option value="web">Web</option>
+            <option value="mobile">Mobile</option>
+            <option value="tool">Tool</option>
+            <option value="game">Game</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="projects" class="grid"></div>
+    </section>
+  </main>
+
+  <footer><div class="container">© 2025 VietCoding — Made with ❤️ in VN</div></footer>
+
+  <!-- Firebase v8 (namespaced) -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+  <!-- your firebase-config.js (you already added) -->
+  <script src="firebase-config.js"></script>
+
+  <!-- core app logic -->
+  <script src="app.js"></script>
+</body>
+</html>

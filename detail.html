@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Project Detail — VietCoding</title><link rel="stylesheet" href="style.css?v=6"></head>
+<body>
+  <div id="loader"><div class="spinner"></div></div>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">VietCoding</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="share.html">Share</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="detail">
+    <div class="container">
+      <img id="banner" class="banner" src="assets/thumbnail.jpg" alt="thumb">
+      <h2 id="title">—</h2>
+      <p id="desc">—</p>
+
+      <div style="display:flex;gap:10px;margin-top:12px">
+        <a id="openRepo" class="btn" target="_blank">Open Repo</a>
+        <button id="downloadBtn" class="btn-sm">Tải (Download)</button>
+        <button id="donateBtn" class="btn-sm">Donate</button>
+      </div>
+
+      <div style="margin-top:18px">
+        <h3>Thông tin thêm</h3>
+        <div id="meta"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer><div class="container">© VietCoding</div></footer>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
